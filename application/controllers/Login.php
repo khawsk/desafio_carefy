@@ -20,7 +20,7 @@ class Login extends CI_Controller {
 		//pela verificação que checa se ele está logado.
 		if ($usuario == "usuario@email.com.br" && $senha == '7c4a8d09ca3762af61e59520943dc26494f8941b' ) {
 			$this->session->set_userdata("logado", 1);
-			redirect(base_url());
+			redirect();
 		} else {
 			//caso a senha/usuário estejam incorretos, então mando o usuário novamente para a tela de login com uma mensagem de erro.
 			$dados['erro'] = "Usuário/Senha incorretos";

@@ -4,6 +4,7 @@ class Welcome extends MY_Controller {
 
 	public function index()
 	{
-		$this->load->view('v_welcome');
+        $variaveis['cadastros'] = $this->m_cadastros->get();
+		$this->load->view('v_home', $variaveis);
 	}
 }

@@ -1,0 +1,16 @@
+body {
+    background-color: #DE6262; 
+}
+
+.btn-logout {
+    background: #DE6262;
+    color: #fff;
+    font-weight: 600;
+}
+
+.text-center h1 {
+    color: #DE6262;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 30px;
+}

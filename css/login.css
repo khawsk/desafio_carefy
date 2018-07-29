@@ -1,21 +1,11 @@
 @import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 
-body, html {
-    height: 100%;
-    /*background: 
-  url(http://www.carefy.com.br/public/landing/images/banner/bg.jpg),
-        -webkit-linear-gradient(320deg, #ff4169 0%, #7c26f8 100%);
-  background: 
-  url(http://www.carefy.com.br/public/landing/images/banner/bg.jpg),
-        -o-linear-gradient(320deg, #ff4169 0%, #7c26f8 100%);
-  background: 
-  url(http://www.carefy.com.br/public/landing/images/banner/bg.jpg),
-        linear-gradient(50deg, #ff4169 0%, #7c26f8 100%);;
-        */
-    background: linear-gradient(50deg, #1E90FF 0%, #ADD8E6 100%);
-
-    background-attachment: fixed;
-    overflow-x: hidden;
+body {
+    background: #DE6262;
+    background: webkit-linear-gradient (60deg, #FFB88C 10%,#DE6262 80%);
+    background:linear-gradient (300deg, #FFB88C 10%,#DE6262 80%);
+    
+    
 }
 
 .text-center {
@@ -35,7 +25,7 @@ body, html {
 }
 
 .banner-sec {
-    background: url(https://static.pexels.com/photos/33972/pexels-photo.jpg) no-repeat left bottom;
+    background: url(https://static.pexels.com/phoos/33972/pexels-photo.jpg) no-repeat left bottom;
     background-size: cover;
     min-height: 500px;
     border-radius: 0 10px 10px 0;
@@ -43,9 +33,9 @@ body, html {
 }
 
 .container {
-    background: #fff;
+    background: #FFB88C;
     border-radius: 10px;
-    box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-inner {
@@ -91,7 +81,7 @@ body, html {
     height: 5px;
     background: #FEB58A;
     display: block;
-    margin-top: 20px;
+    margin-top: 50px;
     border-radius: 3px;
     margin-left: auto;
     margin-right: auto
@@ -111,20 +101,15 @@ body, html {
 }
 
 .banner-text h2 {
-    color: #fff;
+    color: #DE6262;
     font-weight: 600;
 }
-
 .banner-text h2:after {
     content: " ";
     width: 100px;
     height: 5px;
     background: #FFF;
     display: block;
-    margin-top: 20px;
+    margin-top: 150px;
     border-radius: 3px;
-}
-
-.banner-text p {
-    color: #fff;
 }

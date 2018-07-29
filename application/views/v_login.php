@@ -2,20 +2,22 @@
 <html lang="pt-BR">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="http://i0.wp.com/nexocs.com/wp-content/uploads/2016/08/ico-medicina-do-trabalho@2x.png?fit=630%2C540">
-    <title> Login - medCad</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Login </title>
+    <link rel="icon" href="">
     
     <!--
             BOOTSRAP & JS
     >
     </!-->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="<?php echo base_url();?>css/login.css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link href="<?= base_url('assets/css/login.css') ?>" rel="stylesheet" type="text/css">
+    
+    
     
 
     <title>Login</title>
@@ -25,7 +27,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 login-sec">
-                <h2 class="text-center">Bem vindo ao medCad!!</h2>
+                <h2 class="text-center">Login - SISMED </h2>
+                <!-- <img src="http://i0.wp.com/nexocs.com/wp-content/uploads/2016/08/ico-medicina-do-trabalho@2x.png?fit=630%2C540" alt=""> >
+                </!-->
                 <form class="login-form" role="form" method="post" action="<?php echo base_url('index.php/login/logar') ?>">
                     <div class="form-group">
                        <label for="InputEmail" class="text-uppercase">Email</label>
@@ -41,13 +45,13 @@
                     <div class="form-check">
                         <label class="form-check-label">
       <input type="checkbox" class="form-check-input">
-      <small>Remember Me</small>
+      <small>Lembrar-me</small>
     </label>
                         <button type="submit" class="btn btn-login float-right">Submit</button>
                     </div>
                     <? if (isset($erro)): ?>
                         <div class="alert alert-danger" role="alert" style="margin-top: 10px;">
-                            <?= $erro; ?>
+                            <?php echo $erro; ?>
                         </div>
                         <? endif; ?>
                 </form>
@@ -63,14 +67,11 @@
                         <div class="carousel-item active">
                             <img class="d-block img-fluid" src="http://www.carefy.com.br/public/landing/images/banner/bg.jpg" alt="First slide">
                             <div class="carousel-caption d-none d-md-block">
-                                <div class="banner-text">
-                                    <h2>This</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-                                </div>
+                                
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="https://images.pexels.com/photos/7097/people-coffee-tea-meeting.jpg" alt="First slide">
+                            <img class="d-block img-fluid" src="https://images.pexels.com/photos/7097/people-coffee-tea-meeting.jpg" alt="Sec slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <div class="banner-text">
                                     <h2>This is Heaven</h2>
